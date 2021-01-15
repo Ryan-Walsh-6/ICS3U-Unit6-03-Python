@@ -9,13 +9,13 @@ import random
 
 def smallest_number(list_of_numbers):
     # checks smallest numb
-
+    smallest = list_of_numbers[0]
     # process & output
     for loop_counter in (list_of_numbers):
-        if list_of_numbers[0] > loop_counter:
-            list_of_numbers[0] = loop_counter
+        if smallest > loop_counter:
+            smallest = loop_counter
 
-    return list_of_numbers[0]
+    return smallest
 
 
 def main():
